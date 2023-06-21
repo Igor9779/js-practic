@@ -74,8 +74,148 @@
 //   Функція повинна повернути кількість входжень елемента target у масив arr.
 
 
-const arr = [2, 5, 6, 2, 8, 2, 3];
-const target = 2;
+// const arr = [2, 5, 6, 2, 8, 2, 3];
+// const target = 2;
+//     let targetValue = 0;
 
-// const occurrences = countOccurrences(arr, target);
-// console.log(occurrences); // Виведе: 3
+
+// const countOccurrences = (arr, target) => {
+//     arr.forEach(element => {
+//         if (target === element) {
+//             targetValue += 1;
+//         }
+//     });
+//     return targetValue;
+// };
+
+//     countOccurrences([2, 5, 6, 2, 8, 2, 3], 2);
+//     console.log(targetValue);
+
+// ******************************************ClASSES*************************************
+// Exercise 1
+
+// Задача про створення класу "Книга":
+// Створіть клас "Книга", який має властивості, такі як назва, автор і рік видання.
+// Додайте метод, який виводить інформацію про книгу в консоль.
+
+// class Book {
+//     constructor({ name, author, year } = {}) {
+//         this.name = name;
+//         this.author = author;
+//         this.year = year;
+//     }
+
+//     getBookInfo() {
+//         return this;
+//     }
+// }
+
+// const igor = new Book({name: 'Star Wars', author: 'George Lucas', year: 1997});
+
+// igor.getBookInfo();
+//     console.log(igor.getBookInfo());
+
+
+// Exercise 2
+
+// Задача про наслідування класів:
+// Створіть базовий клас "Транспортний засіб" з властивостями, такими як швидкість та кількість пасажирів.
+// Створіть підклас "Автомобіль", який успадковує властивості базового класу та має додаткові властивості,
+// такі як марка автомобіля і тип палива.
+
+// class Vehicle{
+//     constructor({speed, passengerQuantity} = {}) {
+//         this.speed = speed;
+//         this.passengerQuantity = passengerQuantity;
+//     }
+
+
+// }
+
+// class Car extends Vehicle{
+//     constructor({ speed, passengerQuantity, model, typeOfFuel } = {}) {
+//         super({speed, passengerQuantity});
+//         this.model = model;
+//         this.typeOfFuel = typeOfFuel;
+//     }
+// }
+
+// const typeOfVehicle = new Car({ speed: 90, passengerQuantity: 55, model: 'Audi', typeOfFuel: 95 });
+// console.log(typeOfVehicle);
+// console.log(typeOfVehicle.typeOfFuel);
+
+// Exercise 3
+
+// Задача про генератор номерів:
+// Створіть клас "Генератор номерів", який має метод "генерувати", який повертає випадковий номер.
+// Кожний номер повинен складатися з трьох літер, за якими йде десятицифровий номер.
+
+// class Generate {
+//     getRandomNumb() {
+//         return Math.random()
+//     }
+// }
+
+// const numbers = new Generate();
+// console.log(numbers.getRandomNumb());
+
+// Exercise 4
+
+// Задача про додавання елементів до списку:
+// Створіть клас "Список", який має властивість "елементи" (по замовчуванню пустий масив) і метод "додати",
+//  який приймає новий елемент і додає його до списку.
+// Додайте метод "вивести", який виводить всі елементи списку.
+
+// class List {
+//     constructor(elements = []) {
+//         this.elements = elements;
+//     }
+//     getNewEl(item) {
+//         this.elements.push(item);
+//     }
+//     displayAllElements() {
+//         console.log(this.elements);
+//     }
+// }
+
+// const updateList = new List();
+// updateList.getNewEl(4);
+// updateList.getNewEl(7);
+// updateList.getNewEl(9);
+// updateList.getNewEl(3);
+
+// updateList.displayAllElements();
+
+// Exercise 5
+
+// Задача про обчислення середнього значення:
+// Створіть клас "Середнє значення", який має метод "додати",
+//  що приймає числове значення і додає його до масиву чисел.
+// Додайте метод "вирахувати", який обчислює середнє значення всіх чисел у масиві.
+
+// class AverageValue {
+//     constructor(numbers = []) { 
+//         this.numbers = numbers;
+//     }
+
+//     add(newValue) {
+//         this.numbers.push(newValue);
+//     }
+
+//     average() {
+//         let sum = 0;
+//         for (const number of this.numbers) {
+//             sum += number;
+//         }
+//         const averageEl = sum / this.numbers.length;
+//         return averageEl;
+//     }
+// }
+
+// const value = new AverageValue([6, 8, 6, 9, 4, 7]);
+// value.add(11);
+// value.add(5);
+// value.average();
+
+// console.log(value);
+// console.log(value.average());
