@@ -203,12 +203,10 @@
 //     }
 
 //     average() {
-//         let sum = 0;
-//         for (const number of this.numbers) {
-//             sum += number;
-//         }
-//         const averageEl = sum / this.numbers.length;
-//         return averageEl;
+//         const sum = this.numbers.reduce((acc, number) => {
+//             return acc + number;
+//         }, 0);
+//         return sum / this.numbers.length;
 //     }
 // }
 
